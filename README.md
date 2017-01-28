@@ -21,8 +21,8 @@ Project to create a portal for gathering civic hacking ideas.
 
 # Key Sections
 
-** view ideas. 
-** idea submission form
-** page for about us. 
-** login/signup simplified through user name login and oauth2.0 standards and access. 
-** Some basic level of administration for the site based on user roles
+* view ideas. 
+* idea submission form
+* page for about us. 
+* login/signup simplified through user name login and oauth2.0 standards and access. 
+* Some basic level of administration for the site based on user roles
