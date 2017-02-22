@@ -26,3 +26,19 @@ Project to create a portal for gathering civic hacking ideas.
 * page for about us. 
 * login/signup simplified through user name login and oauth2.0 standards and access. 
 * Some basic level of administration for the site based on user roles
+
+
+#Installation
+```
+$npm i
+```
+
+if you have docker you can generate a dev container
+```
+docker-compose up
+```
+
+The dev server is hosted on localhost:3000
+
+
+

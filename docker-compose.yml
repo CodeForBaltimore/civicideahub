@@ -2,8 +2,8 @@ version: '2'
 services:
   dev:
     build: .
-    image: jump-start-dev
-    container_name: app-dev
+    image: civichub-dev
+    container_name: civic-dev
     ports:
       - "3000:3000"
     volumes:
