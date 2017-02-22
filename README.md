@@ -16,7 +16,7 @@ Project to create a portal for gathering civic hacking ideas.
 # MVP Goals
 * Collect ideas from the Baltimore community that may directly and positively impact local communities and government displaying the ideas already submitted
 * Display collected ideas (and allow interaction on ideas?)
-* Display what is currently in progress.
+* Display what is currently in progress
 
 
 # Key Sections
