@@ -29,8 +29,17 @@ Project to create a portal for gathering civic hacking ideas.
 
 
 #Installation
+
+install Node and NPM
+
+Install Dependencies
 ```
 $npm i
+```
+
+Start Dev Server
+```
+$npm start
 ```
 
 if you have docker you can generate a dev container
