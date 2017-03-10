@@ -28,8 +28,6 @@ Project to create a portal for gathering civic hacking ideas.
 * login/signup simplified through user name login and oauth2.0 standards and access. 
 * Some basic level of administration for the site based on user roles
 
-
-
 #Installation
 
 install Node and NPM
