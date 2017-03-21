@@ -8,11 +8,13 @@ class StatefulTemplate extends React.Component {
             sample2: false,
         }
     }
-    
-    componentWillMount() {
-        this.setState({sample3: true});
-    }
-    
+
+    // componentWillMount() {    }
+    // componentDidMount(){}
+    // componentWillReceiveProps(){}
+    // shouldComponentUpdate(){}
+    // componentWillUpdate(){}
+
     render() {
         return(
             <div>
@@ -20,6 +22,9 @@ class StatefulTemplate extends React.Component {
             </div>
         );
     }
+
+    // componentDidUpdate(){}
+    // componentWillUnmount(){}
 }
 
 export default StatefulTemplate;

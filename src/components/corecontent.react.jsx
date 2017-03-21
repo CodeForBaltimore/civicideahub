@@ -1,10 +1,10 @@
 import React from 'react';
+import Entries from "./Entries.react.jsx"
 
 const CoreContent = (props) => {
     return (
         <div>
-            <h1>Civic Idea Hub</h1>
-            <h1>Core Content</h1>
+            <Entries />
         </div>
     );
 }
