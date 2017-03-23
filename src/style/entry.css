@@ -1,0 +1,7 @@
+.entryStyle{
+  border:3px dotted black;
+  min-height:300px;
+  min-width:200px;
+  margin:8px;
+  padding:8px;
+}
