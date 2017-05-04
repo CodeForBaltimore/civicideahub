@@ -40,9 +40,9 @@ $npm i
 Start Dev Server
 ```
 $npm start
-
+```
 Start Mock API server
-
+```
 json-server mock-data/projects.json --port 3030
 ```
 
@@ -52,4 +52,12 @@ docker-compose up
 ```
 
 The dev server is hosted on localhost:3000
+
 The mock api server is hosted on localhost:3030
+
+#Colors
+
+SKY         #CAEBF2
+CARBON      #A9A9A9
+WATERMELON  #FF3B3F
+NEUTRAL     #EFEFEF
