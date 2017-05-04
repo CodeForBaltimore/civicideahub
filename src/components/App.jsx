@@ -13,9 +13,11 @@ function App() {
   return (
     <div className={style.testing}>
       <Header />
-      <CoreContent />
+     <CoreContent />
       <Footer />
     </div>
   );
 }
 export default App;
+
+   // <CoreContent />
