@@ -1,0 +1,23 @@
+
+.ideaCard{
+	border: 2px dashed gray;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.ideaTitle{
+	text-align: left;
+	font-size: 150%;
+}
+
+.ideaAuthor {
+	font-style: italic;
+}
+
+.ideaDescription{
+	text-align: left;
+}
+
+.ideaSolution{
+	text-align: left;
+}
