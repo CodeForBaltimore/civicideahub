@@ -22,10 +22,10 @@ Project to create a portal for gathering civic hacking ideas.
 
 # Key Sections
 
-* view ideas. 
+* view ideas.
 * idea submission form
-* page for about us. 
-* login/signup simplified through user name login and oauth2.0 standards and access. 
+* page for about us.
+* login/signup simplified through user name login and oauth2.0 standards and access.
 * Some basic level of administration for the site based on user roles
 
 #Installation
@@ -40,6 +40,10 @@ $npm i
 Start Dev Server
 ```
 $npm start
+
+Start Mock API server
+
+json-server mock-data/projects.json --port 3030
 ```
 
 if you have docker you can generate a dev container
@@ -48,6 +52,4 @@ docker-compose up
 ```
 
 The dev server is hosted on localhost:3000
-
-
-
+The mock api server is hosted on localhost:3030
