@@ -1,6 +1,6 @@
 
 .ideaCard{
-	border: 2px dashed gray;
+	border: 2px dashed #EFEFEF;
 	padding: 5px;
 	margin-bottom: 20px;
 }
@@ -8,10 +8,20 @@
 .ideaTitle{
 	text-align: left;
 	font-size: 150%;
+	color: #A9A9A9;
 }
 
-.ideaAuthor {
+.ideaAuthor{
+	text-align: right;
+}
+
+.ideaAuthorName {
 	font-style: italic;
+}
+
+.ideaDescriptionTitle{
+	text-align: left;
+	color: #A9A9A9;
 }
 
 .ideaDescription{

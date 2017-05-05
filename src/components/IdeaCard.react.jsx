@@ -6,17 +6,20 @@ const IdeaCard = (props) => {
   return (
   <div>
       <Col className={style.ideaCard}>
+        <Col xs={12} md={8}>
+            <p className={style.ideaTitle}> {props.ideaTitle} </p>
+            <p className={style.ideaAuthor}> <span className={style.ideaAuthorName}> -{props.userName}</span> </p>
+        </Col>
+        <Col xs={6} md={4}>
+            <img border="0" alt="Placeholder" src="http://www.gemologyproject.com/wiki/images/5/5f/Placeholder.jpg" width="75" height="75" />
+        </Col>
         <div>
-          <p className={style.ideaTitle}>{props.ideaTitle}</p>
-          <p>Submitted By: <span className={style.ideaAuthor}>{props.userName}</span></p>
-        </div>
-        <div className={style.ideaDescription}>
-          <strong>Description:</strong>
-          <p>{props.ideaDescription}</p>
+          <p className={style.ideaDescriptionTitle}>Description:</p>
+          <p className={style.ideaDescription}>{props.ideaDescription}</p>
         </div>
         <div className={style.ideaSolution}>
-          <strong>Suggested Solution:</strong>
-          <p>{props.ideaSolution}</p>
+          <p className={style.ideaDescriptionTitle}>Suggested Solution:</p>
+          <p className={style.ideaDescription}>{props.ideaSolution}</p>
         </div>
       </Col>
   </div>

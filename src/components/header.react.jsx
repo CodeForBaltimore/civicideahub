@@ -1,9 +1,11 @@
 import React from 'react';
 import {Nav, NavItem, Navbar} from 'react-bootstrap';
+import style from '../style/header.css';
+
 
 const Header = (props) => {
     return (
-            <Navbar fixedTop collapseOnSelect={true}>
+            <Navbar className={style.header} fixedTop collapseOnSelect={true}>
                 <Navbar.Header>
                     <Navbar.Brand href="/">
                         Civic Idea Hub

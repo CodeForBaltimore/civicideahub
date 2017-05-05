@@ -57,7 +57,7 @@ The mock api server is hosted on localhost:3030
 
 #Colors
 
-SKY         #CAEBF2
-CARBON      #A9A9A9
-WATERMELON  #FF3B3F
-NEUTRAL     #EFEFEF
+SKY         		#CAEBF2
+CARBON (darker)     #A9A9A9
+WATERMELON  		#FF3B3F
+NEUTRAL    		    #EFEFEF
