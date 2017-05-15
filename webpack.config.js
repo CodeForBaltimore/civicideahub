@@ -1,7 +1,8 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const BUILD_DIR = path.resolve(__dirname, '/public/js');
+const BUILD_DIR = path.resolve(__dirname, '/public/js'); //is this used
+
 const APP_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
@@ -13,7 +14,7 @@ module.exports = {
     output: {
       path: __dirname,
       filename: 'bundle.js',
-      publicPath: '/'
+      publicPath: '/public/js/'
     },
     plugins: [
       new webpack.ProvidePlugin({
