@@ -14,7 +14,7 @@ module.exports = {
     output: {
       path: __dirname,
       filename: 'bundle.js',
-      publicPath: '/public/js/'
+      publicPath: '/'
     },
     plugins: [
       new webpack.ProvidePlugin({

@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "babel-register": "^6.24.1",
+    "ejs": "^2.5.6",
     "es6-promise": "^4.1.0",
     "express": "^4.15.2",
     "isomorphic-fetch": "^2.2.1",
