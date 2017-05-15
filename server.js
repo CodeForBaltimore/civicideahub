@@ -7,7 +7,7 @@ import fs from 'fs'
 import log4js from 'log4js'
 import React from "react"
 import ReactDOMServer from 'react-dom/server'
-import App from ./src/components/App.jsx'
+import App from './src/components/App.jsx'
 
 const reactHtml = ReactDOMServer.renderToString(<App />);
 
