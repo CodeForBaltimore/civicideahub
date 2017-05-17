@@ -1,6 +1,6 @@
 import React from 'react';
 import Masonry from 'react-masonry-component'
-import entry from "./entry.react"
+// import entry from "./entry.react"
 import IdeaCard from './IdeaCard.react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import IdeaForm from './IdeaForm.react';
@@ -119,4 +119,3 @@ class Entries extends React.Component {
 }
 
 export default Entries;
-

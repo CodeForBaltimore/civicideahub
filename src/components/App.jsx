@@ -11,7 +11,7 @@ import style from "../style/app.css";
 
 function App() {
   return (
-    <div className={style.testing}>
+    <div className={style.base}>
       <Header />
      <CoreContent />
       <Footer />

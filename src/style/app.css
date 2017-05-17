@@ -2,11 +2,7 @@
  font-family: Futura, sans-serif;
 }
 
-.greetingPage {
-  background-color: blue;
-}
-
-.testing {
+.base {
   margin-top: 80px;
   font-family: "helvetica";
   text-align: center;

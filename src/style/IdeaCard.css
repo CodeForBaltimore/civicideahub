@@ -1,14 +1,13 @@
 
 .ideaCard{
-	border: 2px dashed #EFEFEF;
-	padding: 5px;
+	padding: 16px;
 	margin-bottom: 20px;
 }
 
 .ideaTitle{
 	text-align: left;
 	font-size: 150%;
-	color: #A9A9A9;
+	color: #A9A9A9
 }
 
 .ideaAuthor{
@@ -30,4 +29,9 @@
 
 .ideaSolution{
 	text-align: left;
+}
+
+.image{
+	height: 70px;
+	width:"100%";
 }
