@@ -5,20 +5,17 @@ import style from '../style/header.css';
 
 const Header = (props) => {
     return (
-            <Navbar className={style.header} fixedTop collapseOnSelect={true}>
+            <Navbar className={style.header} style={{backgroundColor:"#CAEBF2"}} fixedTop collapseOnSelect={true}>
                 <Navbar.Header>
                     <Navbar.Brand href="/">
-                        Civic Idea Hub
+                        CIVIC IDEA HUB
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav pullRight>
-                        <NavItem href="#">
-                            Sample
-                        </NavItem>
-                        <NavItem href="#">
-                            Sample 2
+                        <NavItem href="#" >
+                            <span className={style.add} >ADD YOUR IDEA</span>
                         </NavItem>
                     </Nav>
             </Navbar.Collapse>
@@ -27,3 +24,8 @@ const Header = (props) => {
 }
 
 export default Header;
+
+
+// <NavItem href="#">
+//     Sample 2
+// </NavItem>
