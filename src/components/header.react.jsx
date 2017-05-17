@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, NavItem, Navbar} from 'react-bootstrap';
+import {Nav, NavItem, Navbar, button} from 'react-bootstrap';
 import style from '../style/header.css';
 
 
@@ -15,7 +15,14 @@ const Header = (props) => {
                 <Navbar.Collapse>
                     <Nav pullRight>
                         <NavItem href="#" >
-                            <span className={style.add} >ADD YOUR IDEA</span>
+                            <span className={style.add} >Add your idea</span>
+                        </NavItem>
+                        <NavItem href="#">
+                          {
+                            props.userId != "" ?
+                            <span> Log Out {props.userDisplayName} </span>
+                            :<span className={style.login}>Login</span>
+                          }
                         </NavItem>
                     </Nav>
             </Navbar.Collapse>
@@ -24,8 +31,3 @@ const Header = (props) => {
 }
 
 export default Header;
-
-
-// <NavItem href="#">
-//     Sample 2
-// </NavItem>

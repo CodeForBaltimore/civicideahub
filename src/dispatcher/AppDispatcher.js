@@ -1,3 +1,3 @@
-import {Dispatcher} from "flux"
-import assign from "object-assign"
+import {Dispatcher} from 'flux'
+
 export default new Dispatcher()

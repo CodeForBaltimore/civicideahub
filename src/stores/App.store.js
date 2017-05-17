@@ -3,16 +3,22 @@ import {EventEmitter} from "events"
 import React from "react"
 import assign from "object-assign"
 
-import <NAME>constants from "../constants/<>constants.js"
+import ApplicationConstants from "../constants/Application.constants.js"
 
-const ActionTypes = <NAME>constants.ActionTypes
+const ActionTypes = ApplicationConstants.ActionTypes
 
 let _store = {}
+_store.userId = "1234"
+_store.userDisplayName = "Boss"
 
-const <NAME>Store = assign({}, EventEmitter.prototype, {
+const AppStore = assign({}, EventEmitter.prototype, {
 
-    getSOMETHING: function() {
-      return _store.something;
+    getUserId: function() {
+      return _store.userId;
+    },
+
+    getUserDisplayName: function() {
+      return _store.userDisplayName;
     },
 
     emitChange: function() {
@@ -46,11 +52,10 @@ AppDispatcher.register(function(action) {
   }
 
   // If action was acted upon, emit change event
-  <NAME>Store.emitChange();
+  AppStore.emitChange();
 
   return true;
 
 })
 
-
-export default <NAME>Store
+export default AppStore
