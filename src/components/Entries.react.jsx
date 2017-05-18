@@ -43,7 +43,7 @@ class Entries extends React.Component {
 
       var childElements = this.state.entries.map((listValue, index) => {
            return (
-                  <Col xs={12} sm={6} md={6} lg={4} key={listValue.key}>
+                  <Col xs={12} sm={6} md={6} lg={4} key={listValue._id}>
                     <IdeaCard
                           ideaTitle={listValue.ideaTitle}
                           userName={listValue.userName}

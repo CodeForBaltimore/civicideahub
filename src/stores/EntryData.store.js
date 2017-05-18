@@ -18,7 +18,7 @@ _store.entries = [
           ideaSolution: "More people like me",
           likeCount:42,
           coderCount:0,
-          key: 1
+          _id: 1
       },
       {
           ideaTitle: "Sean's bad idea",
@@ -27,7 +27,7 @@ _store.entries = [
           ideaSolution: "Ruin the meetup",
           likeCount:3,
           coderCount:500,
-          key: 2
+          _id: 2
       },
       {
           ideaTitle: "Kaladas mediocre idea",
@@ -36,7 +36,7 @@ _store.entries = [
           ideaSolution: "You know the drill",
           likeCount:3000,
           coderCount:6,
-          key: 3
+          _id: 3
       },
       {
           ideaTitle: "Dicky idea also",
@@ -45,7 +45,7 @@ _store.entries = [
           ideaSolution: "done",
           likeCount:0,
           coderCount:0,
-          key: 4
+          _id: 4
       },
           {
           ideaTitle: "Nick's good idea",
@@ -54,7 +54,7 @@ _store.entries = [
           ideaSolution: "More people like me",
           likeCount:0,
           coderCount:0,
-          key: 5
+          _id: 5
       },
       {
           ideaTitle: "Sean's bad idea",
@@ -63,7 +63,7 @@ _store.entries = [
           ideaSolution: "Ruin the meetup",
           likeCount:0,
           coderCount:0,
-          key: 6
+          _id: 6
       },
       {
           ideaTitle: "Kaladas mediocre idea",
@@ -72,7 +72,7 @@ _store.entries = [
           ideaSolution: "You know the drill",
           likeCount:0,
           coderCount:0,
-          key: 7
+          _id: 7
       },
       {
           ideaTitle: "Dicky idea also",
@@ -81,7 +81,7 @@ _store.entries = [
           ideaSolution: "done",
           likeCount:0,
           coderCount:0,
-          key: 8
+          _id: 8
       }
     ]
 
