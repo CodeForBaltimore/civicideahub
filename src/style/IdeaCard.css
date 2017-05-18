@@ -1,0 +1,74 @@
+
+.ideaCard{
+	margin-bottom: 24px;
+	border: 2px solid #CAEBF2;
+	-webkit-box-shadow: 0px 16px 8px -8px rgba(202,235,242,0.5);
+	-moz-box-shadow: 0px 16px 8px -8px rgba(202,235,242,0.5);
+	box-shadow: 0px 16px 8px -8px rgba(202,235,242,0.5);
+}
+
+.ideaTitle{
+	text-align: left;
+	font-size: 1.5em;
+	color: #A9A9A9;
+	height:40px;
+}
+
+.ideaAuthor{
+	text-align: right;
+	height: 24px;
+}
+
+.ideaAuthorName {
+	font-style: italic;
+}
+
+.ideaDescriptionTitle{
+	text-align: left;
+	color: #A9A9A9;
+}
+
+.ideaDescription{
+	text-align: left;
+	max-height:200px;
+	text-overflow:ellipsis;
+	overflow-y:hidden;;
+}
+
+.ideaSolution{
+	text-align: left;
+}
+
+.header{
+	top:-2px;
+	left:-2px;
+	position: relative;
+	width:100%;
+}
+
+.image{
+	position:relative;
+	top:0px;
+}
+
+.icon{
+	padding-bottom:2px;
+	height: 24px;
+	width: 24px;
+	margin-bottom: 2px;
+	margin-right: 8px;
+	margin-left: 24px;
+}
+
+.databar{
+	height:30px;
+	position: relative;
+	bottom:30px;
+	background-color: #CAEBF2;
+	opacity: 0.75;
+	font-size: 1.5em;
+}
+
+.content{
+	padding: 16px;
+}

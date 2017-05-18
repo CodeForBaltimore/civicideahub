@@ -1,30 +1,33 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const BUILD_DIR = path.resolve(__dirname, 'public');
+const BUILD_DIR = path.resolve(__dirname, '/public/js'); //is this used
+
 const APP_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
     entry: [
-      'webpack-dev-server/client?http://localhost:3000',
-      'webpack/hot/dev-server',
-       APP_DIR + '/index.js'
+      'react-hot-loader/patch',
+      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+      `${APP_DIR}/index.js`
     ],
     output: {
-      path: BUILD_DIR,
+      path: __dirname,
       filename: 'bundle.js',
-      publicPath: '/static'
+      publicPath: '/'
     },
-    plugins: [new webpack.HotModuleReplacementPlugin()],
+    plugins: [
+      new webpack.ProvidePlugin({
+      Promise: 'imports-loader?this=>global!exports-loader?global.Promise!es6-promise',
+      fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch'
+      }),
+      new webpack.HotModuleReplacementPlugin()],
     module: {
       rules: [
         {
           test: /\.js|\.jsx?$/,
           exclude: /(node_modules)/,
           use: [
-                 {
-                  loader: 'react-hot-loader'
-                 },
                  {
                   loader: 'babel-loader'
                  }
@@ -47,7 +50,8 @@ module.exports = {
                   options: {
                     modules: true
                   }
-                }
+                },
+                'postcss-loader'
               ]
         }
             ]
@@ -55,4 +59,4 @@ module.exports = {
     resolve: {
       extensions: ['.js', '.jsx']
     }
-}
+};
