@@ -39,11 +39,34 @@
 	text-align: left;
 }
 
-.image{
+.header{
 	top:-2px;
 	left:-2px;
 	position: relative;
 	width:100%;
+}
+
+.image{
+	position:relative;
+	top:0px;
+}
+
+.icon{
+	padding-bottom:2px;
+	height: 24px;
+	width: 24px;
+	margin-bottom: 2px;
+	margin-right: 8px;
+	margin-left: 24px;
+}
+
+.databar{
+	height:30px;
+	position: relative;
+	bottom:30px;
+	background-color: #CAEBF2;
+	opacity: 0.75;
+	font-size: 1.5em;
 }
 
 .content{

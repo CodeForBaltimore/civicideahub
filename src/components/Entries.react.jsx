@@ -22,6 +22,7 @@ class Entries extends React.Component {
     }
 
     updateEntryData(){
+      console.log("updateEntryData");
       this.setState({
         entries:EntryDataStore.getEntries()
       })
@@ -49,6 +50,9 @@ class Entries extends React.Component {
                           userName={listValue.userName}
                           ideaDescription={listValue.ideaDescription}
                           ideaSolution={listValue.ideaSolution}
+                          likeCount={listValue.likeCount}
+                          coderCount={listValue.coderCount}
+                          image={listValue.image}
                     />
                   </Col>
 
@@ -69,7 +73,10 @@ class Entries extends React.Component {
     }
 
     // componentDidUpdate(){}
-    // componentWillUnmount(){}
+    componentWillUnmount(){
+      EntryDataStore.removeChangeListener(this.updateEntryData())
+
+    }
 }
 
 export default Entries;

@@ -16,6 +16,8 @@ _store.entries = [
           userName: "NickShater",
           ideaDescription: "Pretty sweet idea to make baltimore not suck.Pretty sweet idea to make baltimore not suck.Pretty sweet idea to make baltimore not suck",
           ideaSolution: "More people like me",
+          likeCount:42,
+          coderCount:0,
           key: 1
       },
       {
@@ -23,6 +25,8 @@ _store.entries = [
           userName: "SeanA",
           ideaDescription: "Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "Ruin the meetup",
+          likeCount:3,
+          coderCount:500,
           key: 2
       },
       {
@@ -30,6 +34,8 @@ _store.entries = [
           userName: "Kalada O",
           ideaDescription: "I'm bored with making these. Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "You know the drill",
+          likeCount:3000,
+          coderCount:6,
           key: 3
       },
       {
@@ -37,6 +43,8 @@ _store.entries = [
           userName: "dickyg",
           ideaDescription: "placeholder. Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "done",
+          likeCount:0,
+          coderCount:0,
           key: 4
       },
           {
@@ -44,6 +52,8 @@ _store.entries = [
           userName: "NickShater",
           ideaDescription: "Pretty sweet idea to make baltimore not suck.Pretty sweet idea to make baltimore not suck.Pretty sweet idea to make baltimore not suck",
           ideaSolution: "More people like me",
+          likeCount:0,
+          coderCount:0,
           key: 5
       },
       {
@@ -51,6 +61,8 @@ _store.entries = [
           userName: "SeanA",
           ideaDescription: "Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "Ruin the meetup",
+          likeCount:0,
+          coderCount:0,
           key: 6
       },
       {
@@ -58,6 +70,8 @@ _store.entries = [
           userName: "Kalada O",
           ideaDescription: "I'm bored with making these. Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "You know the drill",
+          likeCount:0,
+          coderCount:0,
           key: 7
       },
       {
@@ -65,6 +79,8 @@ _store.entries = [
           userName: "dickyg",
           ideaDescription: "placeholder. Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "done",
+          likeCount:0,
+          coderCount:0,
           key: 8
       }
     ]
@@ -75,6 +91,8 @@ function loadEntries(data) {
   _store.entries = data
 
 }
+
+
 const EntryDataStore = assign({}, EventEmitter.prototype, {
 
     getEntries: function() {
@@ -112,7 +130,7 @@ AppDispatcher.register(function(action) {
   }
 
   // If action was acted upon, emit change event
-  ExampleStore.emitChange();
+  EntryDataStore.emitChange();
 
   return true;
 

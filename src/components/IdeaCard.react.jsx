@@ -10,11 +10,33 @@ const IdeaCard = (props) => {
   return (
 
     <div className={style.ideaCard}>
-      <img style={{
-          width:props.containerWidth,
-          height:props.containerWidth/1.618
-        }}
-        className={style.image} alt="Placeholder" src="http://www.gemologyproject.com/wiki/images/5/5f/Placeholder.jpg" />
+      <div className={style.header}>
+        <img className={style.image} style={{
+            width:props.containerWidth,
+            height:props.containerWidth/1.618,
+          }}
+           alt="Baltimore rocks" src=
+              {props.image ?
+                props.image:
+                "./img/Placeholder.jpg"}
+          />
+        <div className={style.databar} style={{
+            width:props.containerWidth
+          }}>
+
+            <img className={style.icon} src="./img/heartlike.png" />
+            {props.likeCount}
+
+
+
+            <img className={style.icon} src="./img/devinterest.png" />
+            {props.coderCount}
+
+
+        </div>
+
+      </div>
+
       <div className={style.content}>
 
 
@@ -48,7 +70,9 @@ IdeaCard.propTypes = {
   ideaDescription: PropTypes.string,
   ideaSolution: PropTypes.string,
   containerWidth: PropTypes.number,
-  containerHeight: PropTypes.number
+  containerHeight: PropTypes.number,
+  likeCount:PropTypes.number,
+  coderCount:PropTypes.number,
 
 };
 
