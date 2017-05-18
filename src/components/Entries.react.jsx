@@ -22,7 +22,6 @@ class Entries extends React.Component {
     }
 
     updateEntryData(){
-      console.log("updateEntryData");
       this.setState({
         entries:EntryDataStore.getEntries()
       })
@@ -30,7 +29,7 @@ class Entries extends React.Component {
 
     // componentWillMount() {    }
     componentDidMount(){
-      EntryDataStore.addChangeListener(this.updateEntryData())
+      EntryDataStore.addChangeListener(this.updateEntryData)
 
     }
     // componentWillReceiveProps(){}
