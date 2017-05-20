@@ -1,5 +1,6 @@
 import React from "react";
 import CoreContent from '../components/corecontent.react.jsx';
+import Login from "../components/login.react.jsx";
 
 import Header from "../components/header.react.jsx";
 import Footer from '../components/footer.react.jsx';
@@ -43,6 +44,7 @@ class App extends React.Component{
           userDisplayName={this.state.userDisplayName}
         />
         <CoreContent />
+        <Login />
         <Footer />
       </div>
     );
@@ -51,5 +53,3 @@ class App extends React.Component{
 
 
 export default App;
-
-   // <CoreContent />

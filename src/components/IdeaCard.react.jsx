@@ -28,7 +28,6 @@ const IdeaCard = (props) => {
             {props.likeCount}
 
 
-
             <img className={style.icon} src="./img/devinterest.png" />
             {props.coderCount}
 

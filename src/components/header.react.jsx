@@ -17,11 +17,11 @@ const Header = (props) => {
                         <NavItem href="#" >
                             <span className={style.add} >Add your idea</span>
                         </NavItem>
-                        <NavItem href="#">
+                        <NavItem href="/login">
                           {
                             props.userId != "" ?
                             <span> Log Out {props.userDisplayName} </span>
-                            :<span className={style.login}>Login</span>
+                            : <span className={style.login}>Login</span>
                           }
                         </NavItem>
                     </Nav>
