@@ -39,7 +39,11 @@ const IdeaCard = (props) => {
 
       <div className={style.content}>
 
-
+      <Row>
+          <Col xs={12}>
+              <p className="itemDate">{props.createdAt}</p>
+          </Col>
+      </Row>
       <Row style={{
         maxHeight: 200,
         minHeight: 100
@@ -73,6 +77,7 @@ const IdeaCard = (props) => {
 IdeaCard.propTypes = {
   userName: PropTypes.string,
   ideaTitle: PropTypes.string,
+  createdAt: PropTypes.string,
   ideaDescription: PropTypes.string,
   ideaSolution: PropTypes.string,
   containerWidth: PropTypes.number,

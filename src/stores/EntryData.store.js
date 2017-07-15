@@ -16,6 +16,7 @@ _store.entries = [
           userName: "NickShater",
           ideaDescription: "Pretty sweet idea to make baltimore not suck.Pretty sweet idea to make baltimore not suck.Pretty sweet idea to make baltimore not suck",
           ideaSolution: "More people like me",
+          createdAt: '2012-04-23T18:25:43.511Z',
           likeCount:42,
           coderCount:0,
           _id: 1
@@ -25,6 +26,7 @@ _store.entries = [
           userName: "SeanA",
           ideaDescription: "Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "Ruin the meetup",
+          createdAt: '2011-04-23T18:25:43.511Z',
           likeCount:3,
           coderCount:500,
           _id: 2
@@ -34,6 +36,7 @@ _store.entries = [
           userName: "Kalada O",
           ideaDescription: "I'm bored with making these. Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "You know the drill",
+          createdAt: '2017-04-25T18:25:43.511Z',
           likeCount:3000,
           coderCount:6,
           _id: 3
@@ -43,6 +46,7 @@ _store.entries = [
           userName: "dickyg",
           ideaDescription: "placeholder. Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "done",
+          createdAt: '2017-04-27T18:25:43.511Z',
           likeCount:0,
           coderCount:0,
           _id: 4
@@ -52,6 +56,7 @@ _store.entries = [
           userName: "NickShater",
           ideaDescription: "Pretty sweet idea to make baltimore not suck.Pretty sweet idea to make baltimore not suck.Pretty sweet idea to make baltimore not suck",
           ideaSolution: "More people like me",
+          createdAt: '2012-04-27T19:25:43.511Z',
           likeCount:0,
           coderCount:0,
           _id: 5
@@ -61,6 +66,7 @@ _store.entries = [
           userName: "SeanA",
           ideaDescription: "Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "Ruin the meetup",
+          createdAt: '2012-04-23T18:23:43.511Z',
           likeCount:0,
           coderCount:0,
           _id: 6
@@ -70,6 +76,7 @@ _store.entries = [
           userName: "Kalada O",
           ideaDescription: "I'm bored with making these. Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "You know the drill",
+          createdAt: '2012-04-30T18:25:43.511Z',
           likeCount:0,
           coderCount:0,
           _id: 7
@@ -79,6 +86,7 @@ _store.entries = [
           userName: "dickyg",
           ideaDescription: "placeholder. Less hack nights. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck. Pretty sweet idea to make baltimore not suck",
           ideaSolution: "done",
+          createdAt: '2012-04-23T18:25:42.511Z',
           likeCount:0,
           coderCount:0,
           _id: 8
