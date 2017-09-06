@@ -9,7 +9,7 @@ import style from '../style/IdeaCard.css';
 const IdeaCard = (props) => {
   return (
 
-    <div className={style.ideaCard}>
+    <div className={style.ideaCard} >
       <div className={style.header}>
         <img className={style.image} style={{
             width:props.containerWidth,
@@ -39,14 +39,24 @@ const IdeaCard = (props) => {
 
       <div className={style.content}>
 
-
       <Row>
+          <Col xs={12}>
+              <p className="itemDate">{props.createdAt}</p>
+          </Col>
+      </Row>
+      <Row style={{
+        maxHeight: 200,
+        minHeight: 100
+      }}>
         <Col xs={12}>
             <p className={style.ideaTitle}> {props.ideaTitle} </p>
             <p className={style.ideaAuthor}> <span className={style.ideaAuthorName}> -{props.userName}</span> </p>
         </Col>
       </Row>
-      <Row>
+      <Row style={{
+          maxHeight: 400,
+          minHeight: 200
+      }}>
         <Col xs={12}>
           <p className={style.ideaDescriptionTitle}>Description:</p>
           <p className={style.ideaDescription}>{props.ideaDescription}</p>
@@ -67,6 +77,7 @@ const IdeaCard = (props) => {
 IdeaCard.propTypes = {
   userName: PropTypes.string,
   ideaTitle: PropTypes.string,
+  createdAt: PropTypes.string,
   ideaDescription: PropTypes.string,
   ideaSolution: PropTypes.string,
   containerWidth: PropTypes.number,
