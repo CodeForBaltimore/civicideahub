@@ -8,7 +8,7 @@ import style from "../style/app.css";
 
 import AppStore from "../stores/App.store.js"
 
-
+import * as userData from "../actions/userData.actions.js";
 
 class App extends React.Component{
 
@@ -19,7 +19,11 @@ class App extends React.Component{
       userDisplayName:AppStore.getUserDisplayName(),
       userId:AppStore.getUserId(),
     }
+  }
 
+  logoutUser(){
+        console.log(userData);
+        //userData.logOutUser();
   }
 
   updateUser(){
@@ -39,6 +43,7 @@ class App extends React.Component{
     return (
       <div className={style.base}>
         <Header
+          logOut={this.logoutUser}
           userId={this.state.userId}
           userDisplayName={this.state.userDisplayName}
         />

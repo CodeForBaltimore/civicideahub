@@ -20,7 +20,7 @@ const Header = (props) => {
                         <NavItem href="#">
                           {
                             props.userId != "" ?
-                            <span> Log Out {props.userDisplayName} </span>
+                            <span onClick={props.logOut}> Log Out {props.userDisplayName} </span>
                             :<span className={style.login}>Login</span>
                           }
                         </NavItem>

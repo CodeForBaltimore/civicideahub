@@ -11,7 +11,6 @@ const NewEntryActions ={
 
     //TODO connect to rest service endpoint
 
-
     // AppDispatcher.dispatch({
     //   type: ActionTypes.ACTIONNAME,
     //   data: data

@@ -21,6 +21,12 @@ const AppStore = assign({}, EventEmitter.prototype, {
       return _store.userDisplayName;
     },
 
+    logoutUser: function() {
+      _store.userId = "";
+      _store.userDisplayName = "";
+      //this.emit("userLoggedOut");
+    },
+
     emitChange: function() {
       this.emit('change');
     },
