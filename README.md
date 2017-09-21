@@ -11,7 +11,7 @@ Project to create a portal for gathering civic hacking ideas.
 
 # Anti-goals:
 * Endless discussion without progress
-* A collections of complaints wihtout proposed solutions
+* A collection of complaints without proposed solutions
 
 # MVP Goals
 * Collect ideas from the Baltimore community that may directly and positively impact local communities and government displaying the ideas already submitted
